@@ -118,14 +118,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <includes>
-                        <include>**/*SpringContextIntegrationConfig.java</include> <!-- Cucumber runner -->
+                    <includes>er
+                        <include>**/*CucumberIntegrationConfig**</include> <!-- Cucumber runner -->
+                        <include>**/*SpringContextIntegrationConfig**</include> <!-- Cucumber runner -->
                     </includes>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
